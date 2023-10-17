@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: white;
+    color: black;
+}
+
+/* header / nav */
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    text-decoration: underline;
+}
+
+/* home */
+
+.home{
+    height: 100vh;
+    background: url('Images/alip.png');
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content{
+    max-width: 600px;
+}
+
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.home-content p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.home-content .button-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+.button-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1pxs;
+}
+
+.button-box a:hover{
+    background-color: black;
+    color: white;
+}
+
+/* about us */
+
+.about-section {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+}
+
+.about-section h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.about-section p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+
+/* property */
+
+.property-section-main h3{
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+}
+
+.property-section {
+    background-color:white;
+    padding: 20px;
+    display: flex;
+    overflow-x: auto;
+}
+
+.card {
+    background-color: white;
+    width: 300px;
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.property-section .card:hover{
+    background-color: #f5f5f5;
+}
+
+/* contact us */
+
+.contact-us {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.contact-us h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.social-media-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media-icons li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social-media-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.address, .contact-number {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* footer */
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* about_us Page*/
+
+.about_us_section {
+    background-color: white;
+    margin-top: 70px;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.about_us_title {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.about_us_text {
+    font-size: 16px;
+}
+
+.about_us_card_m {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+}
+
+.about_us_mission,
+.about_us_vision {
+    width: 48%; 
+}
+
+.about_us_mission h2,
+.about_us_vision h2 {
+    font-size: 24px;
+}
+
+.about_us_mission p,
+.about_us_vision p {
+    padding-top: 10px;
+    font-size: 16px;
+    margin: 0;
+}
+
+/* achievement */
+
+.about_us_achievement {
+    padding: 20px;
+}
+
+.about_us_achievement h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about_us_card {
+    width: 23%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.about_us_card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.about_us_card p {
+    font-size: 16px;
+}
+
+.about_us_achievement p{
+    padding-bottom: 15px;
+}
+
+.about_us_achievement .bottom_p{
+    padding-top: 15px;
+}
+
+.about_us_card:hover{
+    background-color: black;
+    color: white;
+}
+
+.meet_our_team {
+    text-align: center;
+    padding: 30px;
+    background-color: #f4f4f4;
+}
+
+.meet_our_team h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.team-card {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.team-member {
+    width: 30%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.member-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 10px;
+}
+
+.member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    font-size: 20px;
+    color: #333;
+    margin: 5px 0;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #777;
+}
+
+/* property */
+
+.property-top{
+    margin-top: 90px;
+    padding-left: 15px;
+    font-size: 26px;
+}
+
+.property-top-2{
+    margin-top: 10px;
+    padding-left: 15px;
+    font-size: 26px;
+}
+
+.property-top-p{
+    padding-left: 15px;
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+.property_section {
+    display: flex;
+    overflow-x: scroll;
+    padding: 10px;
+}
+
+.card {
+    flex: 0 0 300px;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.property-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.property-price {
+    font-size: 16px;
+    color: #ff6600;
+}
+
+.property-features {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+}
+
+.feature img {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+.property-address {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* contact us*/
+
+.h1-contact-top{
+    margin-top: 90px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.p-contact-top{
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.section-form {
+    width: 600px;
+    margin-left: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-top: 10px;
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.section-form h1{
+    padding-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group input[type="number"] {
+    width: 100%;
+}
+
+.form-group input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.form-group .btn{
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 100%;
+    justify-items: center;
+    background-color: black;
+    color: white;
+}
+
+.form-group .btn:hover{
+    background-color: white;
+    color: black;
+}
+
+
